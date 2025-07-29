@@ -1,0 +1,17 @@
+matplotlib:
+  figure.figsize: [20, 12]
+  figure.dpi: 300
+  axes.grid: true
+  axes.prop_cycle: ["1f77b4", "ff7f0e", "2ca02c", "d62728", "9467bd"]
+  font.size: 11
+  savefig.dpi: 300
+  savefig.bbox: tight
+
+seaborn:
+  style: whitegrid
+  palette: deep
+  context: notebook
+
+output:
+  dir: ./figures
+  formats: [png, pdf]
