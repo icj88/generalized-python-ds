@@ -12,6 +12,28 @@ seaborn:
   palette: deep
   context: notebook
 
+eda:
+  plot_settings:
+    default_figsize: [12, 8]
+    font_size: 10
+    style: 'default'
+    palette: 'husl'
+
+  display_limits:
+    max_categories_for_plot: 20
+    max_categories_for_countplot: 10
+    max_categorical_features_to_plot: 6
+    max_heatmap_columns: 20
+    correlation_plot_columns: 3
+    numeric_plot_columns: 3
+    outlier_sample_size: 5000
+
+  statistical_thresholds:
+    high_cardinality_threshold: 50
+    memory_warning_mb: 100
+    missing_values_warning_pct: 50
+    top_categories_display: 10
+
 output:
   dir: ./figures
   formats: [png, pdf]
